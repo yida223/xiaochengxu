@@ -1,0 +1,4 @@
+<wxlogin
+  wxlogo="/pages/wxlogin/images/logo.jpg"
+  backgroundColor="#1E90FF"
+  bindgetuserinfo="getUserInfo"></wxlogin>

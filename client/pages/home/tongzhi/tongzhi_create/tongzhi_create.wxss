@@ -1,0 +1,14 @@
+/* pages/home/tongzhi/tongzhi_create/tongzhi_create.wxss */
+.up{
+  width: 140rpx;
+  height: 140rpx;
+
+}
+.uploader-text {
+    float: left;
+    height: 98px;
+    line-height: 98px;
+    padding-left: 0px;
+    margin-right: 20px;
+}
+

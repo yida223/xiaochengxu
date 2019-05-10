@@ -1,0 +1,88 @@
+/* pages/home/qiandao/qiandao.wxss */
+.sign_in{
+  position: absolute;
+  top:60%;
+  left:30%;
+
+  height: 300rpx;
+  width: 300rpx;
+  border-radius: 500rpx; 
+  display: flex;  
+  align-items: center; 
+  justify-content: center; 
+ 
+  font-size: 70rpx;
+  font-weight: bolder;
+}
+
+.left,.doing{
+  font-size: 70rpx;
+    display: flex;  
+  align-items: center; 
+  justify-content: center;
+}
+
+.doing{
+  font-family:cursive;
+}
+
+.time{
+  display: flex; 
+  align-items: center; 
+  justify-content: center;   
+  font-size: 200rpx;
+}
+
+.picker{
+  left: 20%;
+  display: flex;
+  justify-content: center;
+  font-size: 70rpx;
+  font-weight: bolder;
+  z-index: 9999;
+}
+
+.picker-view{
+    position: relative;
+    left: 30%;
+}
+
+.tip{
+  font-size: 60rpx;
+    display: flex;
+  justify-content: center;
+  
+}
+
+.start{
+  height: 300rpx;
+  width: 300rpx;
+  border-radius: 500rpx; 
+  display: flex;  
+  align-items: center; 
+  justify-content: center; 
+  background-color: blue;
+  font-size: 60rpx;
+  font-weight: bolder;
+}
+
+.check{
+  height: 350rpx;
+  width: 350rpx;
+  border-radius: 500rpx; 
+  display: flex;  
+  align-items: center; 
+  justify-content: center; 
+  
+  font-size: 60rpx;
+  font-weight: bolder;
+}
+
+.ad{
+  color: blue;
+  width: 160rpx;
+  height: 200rpx;
+  right: 310rpx;
+  top: 85rpx;
+  position: fixed;
+}

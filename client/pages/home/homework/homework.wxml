@@ -1,0 +1,18 @@
+<view class="weui-cells weui-cells_after-title">
+  <!-- <view wx:if="{{app.cur_class.ident==='founder'||app.cur_class.ident==='teacher'}}">
+  
+   <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">反馈作业</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+   </view>
+   <view wx:else>-->
+   <view wx:if="{{ident==='teacher'||ident==='founder'}}">
+ <navigator url="/pages/home/homework/homework_creat/homework_creat" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">发布作业</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator></view>
+   </view>
+<!--</view>-->
+   <view wx:for="{{objectArray}}" wx:key="sque">
+<button bindtap='goto' data-name="{{item.name}}"  class='.clickEncryptBtn'>{{item.id}}</button></view>

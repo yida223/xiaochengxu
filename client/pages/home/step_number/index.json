@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "运动步数",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#389aff",
+  "enablePullDownRefresh": true
+}

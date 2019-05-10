@@ -1,0 +1,13 @@
+<!--pages/home/album/found.wxml-->
+<view class="head"></view>
+<image src="{{cover}}"></image>
+
+<button class="cover" bindtap='cover' type="primary">{{button_text}}</button>
+
+<view class="list">
+  <form bindsubmit='send'>
+  <view class="head">相册名\n<input name="name" placeholder="必填"></input></view>
+  <view class="head">简介\n<textarea name="intro" maxlength="30" placeholder="选填"></textarea> </view>
+  <button type="primary" form-type='submit'>完成创建</button>
+  </form>
+</view>

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "班群助手",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#389aff",
+  "backgroundColor": "#e8e8ed",
+  "enablePullDownRefresh": true,
+  "withShareTicket": true
+}

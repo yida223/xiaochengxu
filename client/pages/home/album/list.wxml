@@ -1,0 +1,10 @@
+<view class="all">
+    <view class="up" bindtap='chooseimage'>
+      <image style ="height:100rpx;width:100rpx;" src="../../../image/camera.png"></image>
+      <text>\n上传照片</text>
+    </view>
+    <view class="img" wx:for="{{imgs}}">
+      <image bindtap="click"data-src='{{item}}' class="item" src="{{item}}"></image>
+    </view>
+</view>
+    <view wx:if="{{ident==='teacher'||ident==='founder'||ident==='assistant'}}"><button bindtap='del'>删除本相册</button></view>

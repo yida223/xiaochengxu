@@ -1,0 +1,29 @@
+/* pages/home/homework/homework.wxss */
+.card {
+    border: 20px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 4px 1px 1px #cccccc;
+    position: relative;
+    font-size: 20px;
+    line-height: 16px;
+}
+.tupian{
+      background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528637877777&di=7ee9280ae469cfe3b33eeb5f09775ddb&imgtype=0&src=http%3A%2F%2Fimg.sccnn.com%2Fbimg%2F339%2F21758.jpg');
+    width: 100%;
+    height: 100rpx;
+      margin: 10rpx;
+      font-size: 20px;
+}
+.clickEncryptBtn{  
+  width:300px;  
+  border-radius: 3px;  
+   margin-top: 8px;
+  padding-top:4px;  
+  font-size:20px;  
+   background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528637877777&di=7ee9280ae469cfe3b33eeb5f09775ddb&imgtype=0&src=http%3A%2F%2Fimg.sccnn.com%2Fbimg%2F339%2F21758.jpg');
+  color:white;  
+  overflow:hidden;  
+  height:55px;  
+  text-align:left;
+} 

@@ -1,0 +1,16 @@
+<view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text"> 
+                    <view style='font-size:40rpx;' class="weui-media-box__title weui-media-box__title_in-text">标题:{{head}}</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">发布人:{{person}}</view>
+                        <view class="weui-media-box__info__meta">时间:{{settime}}</view>
+                        
+                    </view>
+
+                </view>
+
+    <view class="head"><text decode='{{true}}'>内容：</text></view>
+</view><view class="content"><text decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;{{content}}</text></view>
+     <view class="weui-article__p">
+   <image bindtap='prev' class="weui-article__img" src="{{imagepath}}" mode="aspectFit" style="height: 180px" />
+    </view>

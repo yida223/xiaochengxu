@@ -1,0 +1,26 @@
+<!--pages/poll/poll.wxml-->
+<view class='yemian'>
+<view class='biaoti'>
+<view wx:for="{{arry_head}}">
+<view data-num="{{item.num}}">标题：{{item.head}}</view>
+</view></view>
+<view class='biaoti'>
+<view wx:for="{{arry_time}}">
+<view>发布时间：{{item.time}}</view>
+</view></view>
+<view class='biaoti'>
+<view wx:for="{{arry_last}}">
+<view>结束时间：{{item.last}}</view>
+</view></view>
+<view class='biaoti'>
+<view wx:for="{{arry_elect}}">
+<view>选择方式：{{item.elect}}</view>
+</view>
+</view>
+</view>
+<view>
+<view class='juli'>选项：</view>
+<view class='xuanze' wx:for="{{arry_option}}" wx:key="{{index}}">
+<switch type='checkbox' bindchange='listerswitch' checked="{{inn[index]}}" data-index="{{index}}" value="{{value}}">{{item.option}}</switch>
+</view></view>
+<button bindtap="showTopTips" type='primary' class='fabu'>提交</button>

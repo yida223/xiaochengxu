@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <image src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>
+
+<navigator bindtap='fail' data-index='{{index}}' url='{{item.url}}' wx:for="{{userListInfo}}">
+ <view class="info_list">
+    <block >
+        <view class="weui_cell">
+            <view class="weui_cell_hd"><image src="{{item.icon}}"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> {{item.text}} </view>
+            </view>
+            <view wx:if="{{item.isunread}}" class="badge">{{item.unreadNum}}</view>
+            <view class="with_arrow"></view>
+        </view>
+    </block>
+  </view>
+  </navigator>
+
+<button class="kf_button" open-type="contact" session-from="weapp">
+    <image class="kf_image" src="/image/service.png"></image>
+</button>

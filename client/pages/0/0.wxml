@@ -1,0 +1,58 @@
+<!--pages/0/0.wxml-->
+<view wx:if="{{jindu}}" class="load">
+  <progress
+    percent='100' 
+    stroke-width="3"
+    activeColor="#09BB07"
+    backgroundColor="grey"
+    active="true"></progress><!--dasfa -->
+    <text class="text1" decode='true'>正在加载数据，请稍后...</text>
+</view>
+
+<view wx:if="{{!jindu && zhuce === 'user'}}" class="form">
+  <form bindsubmit='storeUserInfo'>
+    <text>名称</text><input name="name" maxlength='20' placeholder='建议使用实名（必填）'></input>
+    <text>QQ</text><input name="qq" type="number" maxlength='15' placeholder='(选填)'></input>
+    <text>手机</text><input name="phone" type="number" maxlength='15' placeholder='(选填)'></input>
+    <text>其他</text><textarea name="other" maxlength='100' placeholder='如学号：XXXXXXXXXXXXXX(50字以内，选填)'></textarea>
+    <button form-type='submit'>注册并上传头像</button>
+  </form>
+</view>
+
+<view wx:if="{{zhuce === 'class'}}" class="form">
+  <button bindtap='create' data-option="1">创建班级</button>
+  <button bindtap='join' data-option="2">加入班级</button>
+</view>
+
+<view class="form" wx:if="{{option === 'create'}}">
+  <form bindsubmit='storeClassInfo'>
+    <text>班名</text><input name="name" maxlength='20' placeholder='（必填）'></input>
+    <text>简介</text><textarea name="intro" maxlength='100' placeholder='(50字以内，选填)'></textarea>
+    <text>专业</text><input name="major" type="number" maxlength='15' placeholder='(选填)'></input>
+    <button form-type='submit'>创建并上传班级头像</button>
+  </form>
+</view>
+
+<view wx:if="{{option === 'join'}}">
+  <form bindsubmit='look_up'>
+  <input  class="look_up1" name="value" type="number" focus='true' placeholder='请输入班号进行查询' confirm-type="done" bindconfirm="look_up"></input>
+  <button class="look_up2" form-type='submit'>查询</button>
+  </form>
+    <view wx:if="{{find==='true'}}">
+          <view class="class">
+              <view class="timu"><image src="{{find_class.imagepath}}"></image><text decode='{{true}}'>{{find_class.name}}</text></view>
+              班级id<view class="content">{{find_class.id}}</view>
+              专业<view class="content">{{find_class.major}}</view>
+              班级简介<view class="content"><text decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;{{find_class.intro}}</text></view>
+          </view>
+          
+          <view class="form">
+          <view wx:if="{{!send}}">
+          <button type="primary" bindtap='send'>申请加入</button>
+          </view>
+          <view wx:else>
+          <button type="primary" bindtap="flush">待申请通过后，点此刷新</button>
+          </view>
+          </view>
+    </view>
+</view>

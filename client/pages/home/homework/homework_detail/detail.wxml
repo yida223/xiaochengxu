@@ -1,0 +1,45 @@
+<!--findwork/correct/correct.wxml-->
+<form bindsubmit='formBindsubmit'>
+<view class='.yemian'>
+<view class='.biaoti'>
+<view wx:for="{{arry_name}}">
+<view>学生姓名：{{item.name}}</view></view>
+</view>
+<view class='.biaoti'>
+<view wx:for="{{arry_submit}}">
+<view>提交时间：{{item.submit}}</view></view>
+</view>
+<view class='.biaoti'>
+<view wx:for="{{arry_head}}">
+<view>作业名称：{{item.head}}</view>
+</view></view>
+<view class='.biaoti'>
+<view wx:for="{{arry_time}}">
+<text>布置时间：{{item.time}}</text>
+</view></view>
+<view class='.biaoti'>
+<view wx:for="{{arry_last}}">
+<text>结束时间：{{item.last}}</text>
+</view>
+</view>
+<view class='.biaoti'>
+<view wx:for="{{arry_details}}">
+<text class='.huanhang'>作业详情：{{item.details}}</text>
+</view></view>
+<view class='.biaoti'>
+<view wx:for="{{arry_album}}">
+<image src="{{item.album}}" class='tupian'></image>
+</view>
+</view>
+</view>
+  <view wx:if="{{flag !== 'true'}}">
+      <view class='inputView'><input placeholder='请为该同学打分' name='text' type='number' class='.huanhang'></input></view>
+      <view class='.inputView'><textarea style='width:600rpx;' placeholder='批语' name='other' type='number'></textarea></view> 
+      <button form-type='submit' type='primary'>提交</button>
+  </view>
+  <view wx:else>
+      <view class='.daxiao'>分数：{{score}}</view>
+      <view class='daxiao'>批语：{{other}}</view>
+
+</view>
+</form>

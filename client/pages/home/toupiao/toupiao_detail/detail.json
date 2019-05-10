@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "投票详情",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#389aff",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+      "better-progress": "/components/better-progress/index"
+                     }
+}

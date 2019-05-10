@@ -1,0 +1,76 @@
+{
+  "pages":[
+
+        
+    "pages/wxlogin/index",
+    "pages/0/0",
+    "pages/home/home",
+
+    "pages/home/album/album",
+
+
+      "pages/my/my",
+      "pages/my/class_ident/class_ident",
+      "pages/my/information/information",
+      "pages/my/class_join/class_join",
+      "pages/my/class_join/detail",
+
+      "pages/home/toupiao/toupiao",
+      "pages/home/toupiao/toupiao_creat/toupiao_creat",
+      "pages/home/toupiao/toupiao_detail/detail",
+      "pages/home/toupiao/toupiao_choose/detail",
+
+      "pages/home/step_number/index",
+      
+      "pages/home/telephone/telephone",       
+      "pages/home/tongzhi/tongzhi",
+      "pages/home/tongzhi/tongzhi_create/tongzhi_create",
+      "pages/home/homework/homework",
+        "pages/home/homework/homework_creat/homework_creat",
+        "pages/home/homework/homework_submit/homework_submit",
+        "pages/home/homework/homework_detail/detail",
+        "pages/home/homework/submit_detail/detail", 
+
+
+     
+      "pages/home/album/list",
+      "pages/home/album/found",
+
+      "pages/home/qiandao/qiandao",
+      "pages/home/qiandao/list",
+
+
+      "pages/home/tongzhi/tongzhi_detail/detail",
+
+
+    
+      "pages/information/information"
+  ],
+  "window":{
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "班群小助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#c81623",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "/image/home.png",
+        "selectedIconPath": "/image/home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "/image/my.png",
+        "selectedIconPath": "/image/my_active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

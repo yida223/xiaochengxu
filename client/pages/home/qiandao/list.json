@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "签到详情",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "enablePullDownRefresh": true
+}

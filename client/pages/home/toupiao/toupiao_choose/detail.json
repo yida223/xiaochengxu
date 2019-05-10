@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "投票选择",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#389aff",
+  "enablePullDownRefresh": true
+}

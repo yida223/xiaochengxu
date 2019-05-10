@@ -1,0 +1,109 @@
+/* pages/0/0.wxss */
+.text1{
+  font-size: 20px;
+}
+
+.load{
+    position: fixed;
+    top:30%;
+    left: 18%;
+}
+
+.class{
+  position: relative;
+  top:200rpx;
+  height: 700rpx;
+  border-width: 10rpx;
+  border-style: solid;
+  flex-direction:column;
+  font-weight: bolder;
+}
+
+.class image
+{
+  position: relative;
+  left: -200rpx;
+    height: 100rpx;
+    width: 100rpx;
+}
+
+.timu{
+  position: relative;
+  top:-70rpx;
+}
+
+.timu text{
+  display: flex;
+  justify-content: center;
+  font-size: 70rpx;
+  font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.content{
+  font-weight: normal;
+  justify-content: center;
+  display: flex;
+  word-break:break-all; 
+}
+
+
+.text2{
+  padding:20rpx;
+  border-style:solid;
+  border-width: 5rpx;
+  font-size: 20px;
+  align-items: center;
+}
+
+.form input{
+  width: 500rpx;
+  height: 100rpx;
+  border-style: solid;
+  border-width: 5rpx;
+}
+
+.form button{
+  position: relative;
+  left: -16%;
+  margin-top: 30%;
+  width: 600rpx;
+  border-style: outset;
+  border-width: 5rpx;
+  border-color: black;
+  font-weight: bold;
+  background: #09BB07;
+}
+
+.form textarea{
+  width: 500rpx;
+  height: 300rpx;
+  border-style: solid;
+  border-width: 5rpx;
+}
+
+.form{
+  font-weight: bolder;
+  position: relative;
+  left:15%;
+}
+
+.look_up1{
+  float: left;
+  width: 500rpx;
+  height: 100rpx;
+  border-style: solid;
+  border-width: 5rpx;
+}
+
+.look_up2{
+  margin-left:20rpx; 
+  margin-top: 5rpx;
+  float: left;
+  width:200rpx;
+  height: 100rpx;
+  border-style: groove;
+  border-width: 5rpx;
+  border-color: black;
+  font-weight: bold;
+  background: #09BB07;
+}

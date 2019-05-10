@@ -1,0 +1,33 @@
+
+<view class="form" wx:if="{{option === 'create'}}">
+  <form bindsubmit='storeClassInfo'>
+    <text>班名</text><input name="name" maxlength='20' placeholder='（必填）'></input>
+    <text>简介</text><textarea name="intro" maxlength='100' placeholder='(50字以内，选填)'></textarea>
+    <text>专业</text><input name="major" type="number" maxlength='15' placeholder='(选填)'></input>
+    <button form-type='submit'>创建并上传班级头像</button>
+  </form>
+</view>
+
+<view wx:if="{{option === 'join'}}">
+  <form bindsubmit='look_up'>
+  <input  class="look_up1" name="value" type="number" focus='true' placeholder='请输入班号进行查询' confirm-type="done" bindconfirm="look_up"></input>
+  <button class="look_up2" form-type='submit'>查询</button>
+  </form>
+    <view wx:if="{{find==='true'}}">
+          <view class="class">
+              <view class="timu"><image src="{{find_class.imagepath}}"></image><text decode='{{true}}'>{{find_class.name}}</text></view>
+              班级id<view class="content">{{find_class.id}}</view>
+              专业<view class="content">{{find_class.major}}</view>
+              班级简介<view class="content"><text decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;{{find_class.intro}}</text></view>
+          </view>
+          
+          <view class="form">
+          <view wx:if="{{!send}}">
+          <button type="primary" bindtap='send'>申请加入</button>
+          </view>
+          <view wx:else>
+          <button type="primary" bindtap="flush">待申请通过后，点此刷新</button>
+          </view>
+          </view>
+    </view>
+</view>

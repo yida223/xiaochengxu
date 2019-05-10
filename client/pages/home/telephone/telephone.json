@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "班级通讯录",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#389aff",
+  "enablePullDownRefresh": true
+}

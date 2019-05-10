@@ -1,0 +1,26 @@
+<!--pages/information/information.wxml-->
+<view id="overall">
+  <view><text class="title">信息种类：</text><text class="detail">{{kind}}</text></view>
+  <view><text class="title">标题：</text><text class="detail">{{head}}</text></view>
+  <view><text class="title">内容：\n\n</text>
+    <view class="detail">
+
+      <!--这是对于入班申请的元素,布局可以再改一下-->
+      <block wx:if="{{kind==='系统消息'&&head==='入班申请'}}">
+          <text decode='{{true}}'> 名称：&nbsp;&nbsp;\t{{Info.name}}\n\n</text>
+          <text decode='{{true}}'> QQ:\t&nbsp;&nbsp;{{Info.qq}}\n\n</text>
+          <text decode='{{true}}'> 其他:\t&nbsp;&nbsp;{{Info.other}}\n\n</text>
+          <button class="yes" bindtap='yes'>同意</button><button class="no" bindtap='no'>拒绝</button>
+      </block>
+      <!--这是对于入班申请的元素,布局可以再改一下-->
+
+<!--这是收到的回复的元素,布局可以再改一下-->
+      <block wx:if="{{kind==='同意'||kind==='拒绝'}}">
+          <text decode='{{true}}'> 名称：&nbsp;&nbsp;\t{{Info.name}}\n\n</text>
+          <text decode='{{true}}'> 班级id:\t&nbsp;&nbsp;{{Info.classid}}\n\n</text>
+          <text decode='{{true}}' style="font-size=50rpx;"> 结果:\t&nbsp;&nbsp;{{kind}}\n\n</text>
+          <button class="" bindtap='yes'>同意</button>
+      </block>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+/* pages/home/tongzhi/tongzhi_detail/detail.wxss */
+.head text{
+  font-size: 60rpx;
+  font-weight: bolder;
+
+}
+
+.content{
+}
+
+image{
+  position: relative;
+  left:20%;
+  height: 500rpx;
+  width: 500rpx;
+}

@@ -1,0 +1,35 @@
+ <!--老师签到开启前-->
+ <view wx:if="{{(ident ==='founder'||ident ==='teacher')&&!had_start}}"
+ class="page__bd page__bd_spacing">
+        <view class="tip">签到时间设置</view>
+      
+        <image class='ad' src='/pages/home/qiandao/images/arrow.png'></image> 
+        <picker-view class="picker-view"indicator-style="height: 50px;" style="width:300rpx; height: 300px;" value="{{value}}" bindchange="bindchange">
+        <picker-view-column>
+              <view class="picker" wx:for="{{setmins}}">{{item}}分钟</view>
+        </picker-view-column>
+      </picker-view>
+      <button class="start" type="primary" bindtap='settime'>开启签到</button>
+ </view>
+<!--老师签到开启后-->
+ <view wx:if="{{(ident ==='founder'||ident ==='teacher')&&had_start}}">
+    <text class="left">\n剩余时间{{counttime}}</text>
+    <view class="time">{{min}}:{{s}}:{{ms}}</view>
+    <text class="doing" font-width="bold"wx:if="{{flag==='正在签到'}}">签到正在进行</text>
+    <text class="doing" font-width="bold"wx:elif="{{flag==='签到时间已到'}}">签到已结束</text>
+    <button class="check" type="primary" bindtap='list'>签到情况</button>
+ </view>
+
+<!--学生签到页面-->
+<view wx:elif="{{ident ==='assistant'||ident ==='student'}}">
+    <text class="left">\n剩余时间{{counttime}}</text>
+    <view class="time">{{min}}:{{s}}:{{ms}}</view>
+
+    <text class="doing" font-width="bold"wx:if="{{flag==='正在签到'}}" >签到正在进行</text>
+    <text class="doing" font-width="bold"wx:elif="{{flag==='签到时间已到'}}">签到时间已到</text>
+
+
+    <button class="sign_in" type="primary" bindtap='qiandao'wx:if="{{flag==='正在签到'}}"><text decode="{{true}}" >签&nbsp;到</text></button>
+    <button disabled="true" class="sign_in" type="primary" bindtap='qiandao' wx:elif="{{flag==='已签到'}}"><text decode="{{true}}" >已签到</text></button>
+    
+</view>

@@ -1,0 +1,10 @@
+
+{
+    "navigationBarTitleText": "登录授权",
+    "navigationBarBackgroundColor":"#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+      "wxlogin": "../../components/wxlogin/index"
+    }
+  
+}

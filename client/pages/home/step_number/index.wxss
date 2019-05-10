@@ -1,0 +1,18 @@
+.container{
+background-color: #eee;
+width: 100%;
+
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  
+}
+.itemIn {
+    width: 40px;
+    height:40px;
+    float: left;
+    margin-right:10px;
+    border-radius: 50%;
+}

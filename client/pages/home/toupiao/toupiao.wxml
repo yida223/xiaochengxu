@@ -1,0 +1,8 @@
+<navigator url="/pages/home/toupiao/toupiao_creat/toupiao_creat">
+<button class="weui-btn" type="primary">创建投票</button>
+</navigator>
+
+ <view wx:for="{{array}}">
+                    <button class=".clickEncryptBtn" data-name='{{index}}' bindtap='goto'>{{item.id}}</button>
+
+            </view>

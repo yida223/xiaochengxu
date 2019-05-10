@@ -1,0 +1,10 @@
+<image  class='container' src="/image/run.jpg"></image>
+      <view wx:for="{{run}}"  wx:key="item" >
+      <navigator url="">
+        <view class="weui-cell__hd">
+          <image src="{{userInfo.avatarUrl}}" style="margin-right: 5px;vertical-align: middle;" class='itemIn'></image>
+                </view>
+       <view class="weui-cell__bd">{{userInfo.nickName}}</view>
+         <view style='font-size；50rpx;text-align:right;' >{{item.step}}步</view>  
+       </navigator>
+       </view>

@@ -1,0 +1,30 @@
+
+.item{
+  position: relative;
+}
+.itemOut{
+    border-bottom:1px solid #e0e0e0;
+    margin-left: 10px;
+    padding: 5px 10px 15px 0;
+}
+.itemInfo{
+    height:60px;
+    width: 100%;
+}
+.itemInfoColumn{
+    height:20px;
+    line-height:20px;
+}
+.name{
+    font-size: 15px;
+}
+.num{
+    color: #F23030;
+    font-size:14px;
+}
+.itemIn image{
+    width: 60px;
+    height:60px;
+    float: left;
+    margin-right:10px;
+}

@@ -1,0 +1,35 @@
+/* pages/home/qiandao/list.wxss */
+.tip{
+  display: flex;
+  font-size: 60rpx;
+  
+}
+
+.one{
+  margin: 8rpx;
+  padding: 13rpx;
+    border-width: 12rpx;
+  border-style: groove;
+  display: flex;
+  justify-content: center;
+  font-size: 45rpx;
+}
+
+.one image{
+  position: relative;
+  left:-150rpx;
+  height: 165rpx;
+  width: 165rpx;
+  border-radius: 500rpx; 
+}
+
+.one text{
+  position: relative;
+  top:40rpx;
+}
+
+.all{
+    background-color: DodgerBlue;
+    padding: 16rpx;
+    
+}

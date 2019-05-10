@@ -1,0 +1,56 @@
+/* pages/poll/poll.wxss */
+.fui-switch{
+ position: relative;
+ width: .87rem;
+ height: .5rem;
+ z-index: 10;
+ display: inline-block;
+ outline: medium;
+ border: 1px solid #dfdfdf;
+ border-radius: .25rem;
+ background-color: #dfdfdf;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ vertical-align: middle;
+}
+.biaoti{
+  font-size:16px;
+  margin-bottom: 20px;
+}
+.yemian{
+   border: 20px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 4px 1px 1px 1px #cccccc;
+    margin: 8px;
+    position: relative;
+    font-size: 20px;
+    line-height: 16px;
+}
+.juli{
+  margin-top: 6px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+.xuanze{
+   margin-top: 6px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-style: #d1c7b7;
+  padding-bottom: 3px;
+  padding-left: 4px;
+}
+.wx-switch-input{
+  width:82rpx !important;
+  height:40rpx !important;
+}
+.fabu{
+  margin-top: 10px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 5px;
+}

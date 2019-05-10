@@ -1,0 +1,13 @@
+/* pages/my/class_join/class_join.wxss */
+.other{
+  color: grey;
+  margin: 20rpx;
+}
+
+.button{
+  margin:20rpx;
+  width: 750rpx;
+  left: -20rpx;
+  border-style: outset;
+  border-width: 5rpx;
+}

@@ -1,0 +1,30 @@
+<!--findwork/c/c.wxml-->
+<view class='.yemian'>
+<view class='.biaoti'>
+<view wx:for="{{arry_head}}">
+<view data-num="{{item.num}}">作业名称：{{item.head}}</view>
+</view></view>
+<view class='.biaoti'>
+<view wx:for="{{arry_time}}">
+<text>布置时间：{{item.time}}</text>
+</view></view>
+<view class='.biaoti'>
+<view wx:for="{{arry_last}}">
+<text>截止时间：{{item.last}}</text>
+</view></view>
+<view class='.biaoti'>
+<view wx:for="{{arry_details}}">
+<text class='.huanhang'>作业详情：{{item.details}}</text>
+</view></view></view>
+<view class='biaoti1'>
+<text>已提交作业成员：</text>
+<view wx:for="{{f_student}}" class='.card'>
+<view bindtap='goto' data-num="{{j}}" data-index="{{index}}">{{item.student}}</view>
+</view>
+</view>
+<view class='biaoti1'>
+<text>未提交作业成员：</text>
+<view wx:for="{{unf_student}}" class='.card'>
+<view>{{item.name}}</view>
+</view>
+</view>

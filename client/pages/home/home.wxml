@@ -1,0 +1,52 @@
+<view>
+<swiper indicator-dots="{{indicatorDots}}" catchtap="onItemClick" class="swiper"
+
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" >
+
+    <block wx:for="{{imgUrls}}" wx:key="id">
+
+        <swiper-item>
+
+            <image style="width: 514px; height: 150px; position: absolute; left: 50%; margin-left: -257px;" src="{{item.img}}" class="slide-image" data-postId="{{item.id}}" />
+
+        </swiper-item>
+
+    </block>
+</swiper>
+</view>
+<view class="index-category">
+   <navigator url="{{category.category_way}}" class="index-category-item" wx:for="{{category_list}}" wx:for-item="category" data-name='{{category.category_name}}' bindtap='onItemClick'>
+      <view class="index-category-item-icon" style="background: {{category.category_color}};">
+      
+        <image class="index-category-item-icon-image" src="{{category.category_image}}" />
+      </view>
+      {{category.category_name}}
+    </navigator>
+      <button  class="share" open-type='share'><image src="../../image/invite.png"></image><text decode="{{true}}">\n邀请</text></button>
+  </view>
+<view id='dynamic'>动态
+<button class="inform" wx:if="{{join}}" bindtap='navigate_shenqing'>您有{{join_num}}则未审核的入班请求</button>
+<button class="inform" wx:if="{{reply}}" bindtap='navigate_reply'>您有{{reply_num}}则回复消息未查收</button>
+
+<button class="inform" wx:if="{{inform}}" data-kind='inform' bindtap='detail'>
+    <view class="biaoti">班级通知：</view>
+       <view class="content"><text decode='"{{ture}}"'>{{head.inform}}\n&nbsp;</text></view>
+    <view class="biaoti">发布时间：</view>
+       <view class="content">{{head.time1}}</view>
+</button>
+
+<button class="inform" wx:if="{{vote}}" data-kind='vote' bindtap='detail'>
+    <view class="biaoti">班级投票：</view>
+       <view class="content"><text decode='"{{ture}}"' >{{head.vote}}\n&nbsp;</text></view>
+    <view class="biaoti">发布时间：</view>
+       <view class="content">{{head.time2}}</view>
+</button>
+
+<button class="inform" wx:if="{{homework}}" data-kind='homework' bindtap='detail'>
+    <view class="biaoti">班级作业：</view>
+       <view class="content"><text decode='"{{ture}}"'>{{head.homework}}\n&nbsp;</text></view>
+    <view class="biaoti">发布时间：</view>
+       <view class="content">{{head.time3}}</view>
+</button>
+</view>
+

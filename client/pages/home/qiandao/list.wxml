@@ -1,0 +1,9 @@
+<!--pages/home/qiandao/list.wxml-->
+<view class="all">
+  <view class="tip"><text decode='{{true}}'>已签到：&nbsp;&nbsp;{{y_num}}&nbsp;人</text></view>
+  <view class="tip"><text decode='{{true}}'>未签到：&nbsp;&nbsp;{{n_num}}&nbsp;人</text></view>
+</view>
+<text>未签到成员如下</text>
+<view wx:for="{{arr}}">
+  <view class="one"><image src="{{item.imagepath}}"></image><text>{{item.name}}</text></view>
+</view>

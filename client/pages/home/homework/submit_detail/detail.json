@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "作业提交情况",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#389aff",
+  "enablePullDownRefresh": true
+}

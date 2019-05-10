@@ -1,0 +1,7 @@
+<view wx:for="{{arr}}">
+  <view  bindtap='click' data-ident='{{item.ident}}' data-openid='{{item.openid}}' class="one">
+        <image src="{{item.imagepath}}"></image>
+        <text class="name">{{item.name}}</text>
+        <text class="ident">{{item.ident}}</text>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+/* pages/information/information.wxss */
+image{
+  position: relative;
+  left:25%;
+  border-style:outset;
+  border-width: 20rpx;
+  height: 300rpx;
+  width: 300rpx;
+  margin: 20rpx;
+}
+
+.cover{
+  position: relative;
+  top:-10rpx;
+    width: 370rpx;
+}
+
+.other{
+    display: -webkit-box !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  word-break: break-all !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp:8 !important; 
+  height: 200rpx !important;
+}

@@ -1,0 +1,29 @@
+/* pages/album/album.wxss */
+page{
+  background: #8192D6;
+}
+
+.cover{
+  border-width: 8rpx;
+  border-style: solid;
+  border-color:#D9B3E6;
+  margin: 20rpx;
+  display: flex;
+  background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1529242248&di=b520c8d1346c95204adfe93de71ad7ad&imgtype=jpg&er=1&src=http%3A%2F%2Fimg05.tooopen.com%2Fimages%2F20150202%2Fsy_109954295974.jpg");
+}
+.cover image{
+  border-style:outset;
+  border-width: 20rpx;
+  height: 300rpx;
+  width: 300rpx;
+  margin: 20rpx;
+}
+
+.cover text{
+  font-size: 30rpx;
+  margin:20rpx;
+}
+
+button{
+  margin: 20rpx;
+}

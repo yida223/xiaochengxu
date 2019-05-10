@@ -1,0 +1,81 @@
+/* pages/home/toupiao/toupiao_creat/toupiao_detail/detail.wxss */
+/* pages/poll/poll.wxss */
+.fui-switch{
+ position: relative;
+ width: .87rem;
+ height: .5rem;
+ z-index: 10;
+ display: inline-block;
+ outline: medium;
+ border: 1px solid #dfdfdf;
+ border-radius: .25rem;
+ background-color: #dfdfdf;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ vertical-align: middle;
+}
+.biaoti{
+  font-size:16px;
+  margin-bottom: 20px;
+}
+.yemian{
+   border: 20px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 4px 1px 1px 1px #cccccc;
+    margin: 8px;
+    position: relative;
+    font-size: 20px;
+    line-height: 16px;
+}
+.juli{
+  margin-top: 6px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+.xuanze{
+   margin-top: 6px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-style: #d1c7b7;
+  padding-bottom: 3px;
+  padding-left: 4px;
+}
+.wx-switch-input{
+  width:82rpx !important;
+  height:40rpx !important;
+}
+.fabu{
+  margin-top: 10px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 5px;
+}
+.card {
+    border: 16px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 4px 1px 1px #cccccc;
+    position: relative;
+    font-size: 20px;
+    line-height: 3px;
+    margin-top: 6px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.clickEncryptBtn{  
+  width:300px;  
+  border-radius: 3px;  
+   margin-top: 8px;
+  padding-top:4px;  
+  font-size:20px;  
+   background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528648564617&di=a29ba31842e6d51457c73ebe82bfdc6e&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F12%2F90%2F50%2F25e58PICq8r.jpg');
+  color:black;  
+  overflow:hidden;  
+  height:20px;  
+  text-align:left;
+} 

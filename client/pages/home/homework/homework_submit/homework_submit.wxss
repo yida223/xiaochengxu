@@ -1,0 +1,24 @@
+
+.yemian{
+   border: 20px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 4px 1px 1px 1px #cccccc;
+    margin: 8px;
+    position: relative;
+    font-size: 20px;
+    line-height: 16px;
+}
+.biaoti{
+  font-size:16px;
+  margin-bottom: 20px;
+  
+}
+.huanhang{
+  display: -webkit-box ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:8; 
+}

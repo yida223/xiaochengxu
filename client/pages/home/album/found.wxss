@@ -1,0 +1,40 @@
+/* pages/home/album/found.wxss */
+image{
+  position: relative;
+  left:25%;
+  border-style:outset;
+  border-width: 20rpx;
+  height: 300rpx;
+  width: 300rpx;
+  margin: 20rpx;
+}
+
+.cover{
+  position: relative;
+ 
+    width: 370rpx;
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+    font-weight: bolder;
+  position: relative;
+
+}
+
+.list input{
+    width: 500rpx;
+  height: 100rpx;
+  border-style: solid;
+  border-width: 5rpx;
+}
+
+.list textarea{
+      width: 500rpx;
+  height: 350rpx;
+  border-style: solid;
+  border-width: 5rpx;
+  margin: 5rpx;
+}

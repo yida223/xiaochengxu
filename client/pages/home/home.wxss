@@ -1,0 +1,98 @@
+
+.index-category {
+  overflow: hidden;
+  background: #FFFAF0;
+  border-top: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+  border-style:groove;
+  border-width: 8rpx;
+}
+
+.index-category-item {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+.index-category-item-icon {
+  position: relative;
+  margin-left: -25px;
+  margin-bottom: 5px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #000;
+}
+
+.index-category-item-icon-image {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#dynamic{
+  border-style:groove;
+  border-width: 8rpx;
+  border-color: #AFEEEE;
+  border-top-color: black;
+  border-width: 12rpx;
+  font-weight: bolder;
+  color: 	#FF7F50;
+  size:100%;
+  text-align: center;
+  font-size: 50rpx;
+  background-image: url(http://img.glzy8.com/upfiles/www/ppt/jpg/24691.jpg)
+
+}
+
+.share image{
+  position: relative;
+  margin-left: -25px;
+  margin-bottom: 5px;
+  left: 25%;
+  top:30rpx;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #FFA07A;
+}
+
+
+.share text{
+  position: relative;
+  top:-40rpx;
+  font-size:38rpx;
+}
+
+.share{
+  border-width: 0rpx;
+  background-color: #FFFAF0;
+  margin-bottom: -75rpx;
+}
+
+.share::after{
+border: none;
+}
+
+.inform{
+  margin: 20rpx;
+  background-color: SlateGray;
+  border-style: outset;
+  border:15rpx;
+  background-image: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2566660055,3605671419&fm=27&gp=0.jpg)
+}
+
+.biaoti{
+  float: left;
+  position: relative;
+  display: inline;
+  justify-content:flex-start;
+}
+
+.content{
+  display: inline;
+  justify-content: center;
+}

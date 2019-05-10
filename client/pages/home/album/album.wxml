@@ -1,0 +1,8 @@
+<!--pages/album/album.wxml-->
+
+<view class="cover" wx:for="{{albums}}">
+      <image bindtap="click" data-name="{{item.name}}" src="{{item.imagepath}}"></image>
+      <text>名称：{{item.name}}\n\n简介：{{item.intro}}\n\n创建时间：{{item.settime}}</text>
+</view>
+
+<button bindtap="create" wx:if="{{ident==='founder'||ident==='teacher'||ident==='assistant'}}" type="primary">创建相册</button>

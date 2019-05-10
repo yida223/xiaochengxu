@@ -1,0 +1,19 @@
+   <view wx:if="{{app.cur_class.ident==='founder'||app.cur_class.ident==='teacher'||app.cur_class.ident==='banjizhushou'}}">
+     <navigator url='/pages/home/tongzhi/tongzhi_create/tongzhi_create'><button class="weui-btn" type="primary">创建通知</button></navigator>
+   </view>
+<navigator url='/pages/home/tongzhi/tongzhi_create/tongzhi_create'><button class="weui-btn" type="primary">创建通知</button></navigator>
+
+   <view bindlongtap="delete">
+    <view  data-settime='{{item.settime}}' data-head='{{item.head}}'  data-content='{{item.content}}' data-person='{{item.person}}'  data-time='{{settime[index]}}' bindtap="click" class="weui-panel"  wx:for="{{list}}">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{item.head}}</view>
+                    <view class="weui-media-box__desc">{{item.content}}</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">{{item.person}}</view>
+                        <view class="weui-media-box__info__meta">时间:{{item.settime}}</view>
+                    </view>
+                </view>
+            </view>
+     </view>
+   </view>   

@@ -1,0 +1,42 @@
+.one{
+  margin: 10rpx 10rpx;
+  border-width: 15rpx;
+  border-style: groove;
+  background-image: url('https://www.blacklighter.cn/otherimg/ident_list.png'); 
+
+
+  width: 710rpx;
+}
+
+.test{
+  position:relative;
+  height: 300rpx;
+  width: 300rpx;
+}
+
+.one image{
+
+  position: relative;
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 500rpx; 
+  border-style: outset;
+  border-width: 5rpx;
+}
+.name{
+  position: relative;
+  top:-45rpx;
+  left: 40rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 50rpx;
+  font-weight: bolder;
+}
+
+.ident{
+
+  float: right;
+  font-size: 40rpx;
+  color: #DCDCDC;
+  top:15rpx;
+}

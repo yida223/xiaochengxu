@@ -1,0 +1,26 @@
+ <view class="item" wx:for="{{people}}" style="display: block;">
+   <!--<view bindlongtap="phoneNumTap" class="itemOut">
+     <view class="itemIn">
+  <image src="/image/home.png"></image>
+      <view class="itemInfo">
+         <view class="itemInfoColumn name">{{phone_name}}</view>
+         <view  class="itemInfoColumn num">{{phoneNum}}</view>
+   <view class="weui-cell__ft">备注信息</view>             
+                  </view>
+           </view>
+     </view>-->
+
+        <view bindtouchstart='start' bindtouchend='end' data-openid="{{openids[index]}}" data-name='{{item.name}}' data-phone='{{item.phone}}' data-imagepth='{{paths[index]}}' class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                    <image src="{{paths[index]}}" style="width: 50px; height: 50px; display: block"></image>
+                    
+                </view>
+                <view class="weui-cell__bd">
+                    <view>{{item.name}}</view>
+                    <view style="font-size: 16px;color: #0000EE;">{{item.phone}}</view>
+                    
+                </view>
+            </view>
+         </view>
+</view>
